@@ -1,0 +1,39 @@
+<!-- this is html 5 doctype -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- have a look at http://selfhtml.org -->
+        <title>Hello World</title>
+        <link rel="stylesheet" href="assets/style.css" type="text/css" />
+        <!-- follow the link to see some external js -->
+        <script type="text/javascript" src="assets/main.js"></script>
+        <!-- this is jquery -->
+        <script type="text/javascript" src="assets/jquery-1.8.2.min.js"></script>
+        <!-- this is some js code in the doc -->
+        <!-- using jquery and normal js -->
+        <script type="text/javascript">
+        $(document).ready(function(){
+        var res = do_something();
+        $('#append').append(res);
+        $('#second_div_with_ID').append('<p> Hello World</p>');
+        });
+        </script>
+    </head>
+    <body>
+
+        <div id="first_div_with_ID" class="my_first_class">
+        <h1 id="append">Headline </h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu <a href="http://fabiantheblind.github.com/Typography-And-Automation/" target="blanc">fugiat</a> nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        </div> 
+        <div id="second_div_with_ID" class="my_first_class">
+        </div>
+    </body>
+</html>
